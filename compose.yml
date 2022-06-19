@@ -1,0 +1,7 @@
+services:
+  ml_dev:
+    build: .
+    volumes:
+      - $PWD:/work
+    working_dir: /work
+    tty: true
