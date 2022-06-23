@@ -1,5 +1,4 @@
-FROM python:3.10
-
+FROM nvidia/cuda:11.4.2-base-ubuntu20.04
 # RUN pip install numpy
 # RUN pip install sklearn
 # RUN pip install pandas

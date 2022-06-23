@@ -5,3 +5,10 @@ services:
       - $PWD:/work
     working_dir: /work
     tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
